@@ -8,6 +8,8 @@ make sure put your key at first row in Excel
 | 2 | value1 | value2 | value3 |
 | 3 | value1 | value2 | value3 |
 
+# how to
+
 first clone/download this project
 ```
 run npm install
