@@ -2,11 +2,11 @@
 
 make sure put your key at first row in Excel
 
-|   | A | B |
-| - | - | - |
-| 1 | key1 | key2 |
-| 2 | value1 | value2 |
-| 3 | value1 | value2 |
+|   | A | B | C |
+| - | - | - | = |
+| 1 | key1 | key2 | key3 |
+| 2 | value1 | value2 | value3 |
+| 3 | value1 | value2 | value3 |
 
 first clone/download this project
 ```
