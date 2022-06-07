@@ -18,4 +18,4 @@ run node index.js via terminal or your CLI
 
 make sure your first row is a JSON key
 
-don't forge to validate JSON here: [https://jsonlint.com/](https://jsonlint.com/)
+> don't forget to validate JSON after converting here: [https://jsonlint.com/](https://jsonlint.com/)
