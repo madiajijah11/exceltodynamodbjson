@@ -7,7 +7,7 @@ run npm install
 
 open index.js with notepad or your code editor
 ```
-change iRecycle.xlsx to your file name/ change your file name to iRecycle.xlsx
+change iRecycle.xlsx to your file name/change your file name to iRecycle.xlsx
 ```
 run node index.js via terminal or your CLI
 
