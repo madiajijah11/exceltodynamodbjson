@@ -1,6 +1,6 @@
 # exceltodynamodbjson
 
-make sure your first row is a JSON key
+make sure put your key at first row in Excel
 
 | key1  | key2 |
 | ------------- | ------------- |
