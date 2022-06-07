@@ -17,3 +17,5 @@ run node index.js via terminal or your CLI
 | value1  | value2  |
 
 make sure your first row is a JSON key
+
+don't forge to validate JSON here: [https://jsonlint.com/](https://jsonlint.com/)
