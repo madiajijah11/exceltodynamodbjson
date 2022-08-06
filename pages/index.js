@@ -16,12 +16,8 @@ export default function Home() {
 			alert("Please select a file");
 			return;
 		}
-		console.log(fileInput);
-
 		const fileName = fileInput.current.files[0].name;
-		console.log(fileName);
 		const fileExtension = fileName.split(".")[1];
-		console.log(fileExtension);
 		if (fileExtension !== "xlsx" && fileExtension !== "xls") {
 			alert("Please select a xlsx file");
 		} else {
@@ -36,15 +32,14 @@ export default function Home() {
 		reader.onload = (req) => {
 			const data = req.target.result;
 			const workbook = XLSX.read(data, { type: "binary" });
-			const result = {};
-			workbook.SheetNames.forEach((sheetName) => {
-				const readsheet = XLSX.utils.sheet_to_json(workbook.Sheets[sheetName]);
-				if (readsheet.length > 0) {
-					result[sheetName] = readsheet;
-				}
+			const worksheet = workbook.Sheets[workbook.SheetNames[0]];
+			const jsonObject = XLSX.utils.sheet_to_json(worksheet);
+			setNormalJson(JSON.stringify(jsonObject, null, 2));
+
+			//convert normal json to dynamodb json
+			dynamifyObject(jsonObject, function (dynamoJson) {
+				setdynamodbJson(dynamoJson);
 			});
-			setNormalJson(JSON.stringify(result, null, 4));
-			setdynamodbJson = dynamifyObject(result);
 		};
 	};
 
@@ -61,7 +56,7 @@ export default function Home() {
 					<h1>EXCEL TO JSON</h1>
 					<form>
 						<label className={styles.label} htmlFor="input-excel-file">
-							Input Excel File:
+							Input Excel File 📁:
 						</label>
 						<input
 							type="file"
@@ -70,10 +65,10 @@ export default function Home() {
 							ref={fileInput}
 							onChange={handleSubmit}
 						/>
-						<button className={styles.btn} type="submit">
-							Upload
-						</button>
 					</form>
+					<button onClick={() => [setNormalJson(""), setdynamodbJson("")]}>
+						Reset Textarea
+					</button>
 					<div>
 						<textarea
 							className={styles.convert}
