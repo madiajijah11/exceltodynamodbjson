@@ -121,8 +121,17 @@ export default function Home() {
 
 			<footer className="text-center">
 				<hr />
-				<a href="https://www.github.com/madiajijah11" target="_blank">
+				<a
+					href="https://www.github.com/madiajijah11"
+					target="_blank"
+					rel="noreferrer noopener">
 					Created by madiajijah11
+					<span>
+						<img
+							src="https://avatars.githubusercontent.com/u/20562116?v=4"
+							alt="github madiajijah11"
+						/>
+					</span>
 				</a>
 			</footer>
 		</>
