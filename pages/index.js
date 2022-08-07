@@ -37,8 +37,9 @@ export default function Home() {
 			setNormalJson(JSON.stringify(jsonObject, null, 2));
 
 			//convert normal json to dynamodb json
-			dynamifyObject(jsonObject, function (dynamoJson) {
-				setdynamodbJson(dynamoJson);
+			dynamifyObject(jsonObject, (dynamoJson) => {
+				const data = JSON.parse(dynamoJson);
+				setdynamodbJson(JSON.stringify(data, null, 2));
 			});
 		};
 	};
@@ -75,14 +76,14 @@ export default function Home() {
 							cols="100"
 							rows="40"
 							value={normalJson}
-							onChange={(req) => setNormalJson(e.target.value)}
+							onChange={(req) => setNormalJson(req.target.value)}
 						/>
 						<textarea
 							className={styles.convert}
 							cols="100"
 							rows="40"
 							value={dynamodbJson}
-							onChange={(req) => setdynamodbJson(e.target.value)}
+							onChange={(req) => setdynamodbJson(req.target.value)}
 						/>
 					</div>
 				</div>
