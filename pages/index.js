@@ -125,11 +125,14 @@ export default function Home() {
 					href="https://www.github.com/madiajijah11"
 					target="_blank"
 					rel="noreferrer noopener">
-					Created by madiajijah11
+					Created by madiajijah11{" "}
 					<span>
 						<img
+							style={{ borderRadius: "50%" }}
 							src="https://avatars.githubusercontent.com/u/20562116?v=4"
 							alt="github madiajijah11"
+							width="50"
+							height="50"
 						/>
 					</span>
 				</a>
