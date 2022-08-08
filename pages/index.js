@@ -116,6 +116,7 @@ export default function Home() {
 			<footer className="text-center">
 				<hr />
 				<a
+					style={{ textDecoration: "none" }}
 					href="https://www.github.com/madiajijah11"
 					target="_blank"
 					rel="noreferrer noopener">
