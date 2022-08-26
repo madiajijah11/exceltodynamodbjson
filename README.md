@@ -29,7 +29,7 @@
 Check out the web version of **Excel to JSON and DynamodB JSON** here: [https://exceltodynamodbjson.vercel.app](https://exceltodynamodbjson.vercel.app)
 
 <br>
-<img src="https://raw.githubusercontent.com/madiajijah11/exceltodynamodbjson/main/puglic/exceltodynamodbjson.jpg">
+<img src="https://raw.githubusercontent.com/madiajijah11/exceltodynamodbjson/main/public/exceltodynamodbjson.jpg">
 <br>
 
 ## Technologies
