@@ -47,13 +47,13 @@ export default function Home() {
 	return (
 		<>
 			<Head>
-				<title>Excel to JSON to DynamoDB JSON</title>
+				<title>Excel to JSON and DynamoDB JSON</title>
 				<meta name="description" content="Excel to JSON to DynamoDB JSON by madiajijah11" />
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
 			<div className="container-fluid">
-				<h1 className="text-center">Excel to JSON to DynamoDB JSON</h1>
+				<h1 className="text-center">Excel to JSON and DynamoDB JSON</h1>
 				<div className="row">
 					<div className="col-md-6">
 						<div className="input-group mb-3">

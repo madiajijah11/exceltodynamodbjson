@@ -1,34 +1,86 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align="center">
+  <br>
+  <h1><strong>Excel to JSON and DynamoDB JSON Web</strong></h1>
+  <p>📄 Help people convert excel to JSON and DynamoDB JSON. 📄</p>
+  <br>
+  <p align="center">
+    <a href="https://github.com/madiajijah11/exceltodynamodbjson/issues"><img alt="Contributions Welcome" src="https://img.shields.io/badge/contributions-welcome-blue.svg?style=flat"></a>
+  </p>
+  <br>
+    
+  [**View the Web App**](https://exceltodynamodbjson.vercel.app)
+</div>
 
-## Getting Started
+## Table of Contents
 
-First, run the development server:
+- [Table of Contents](#table-of-contents)
+- [Description](#description)
+- [Live Demo](#live-demo)
+- [Technologies](#technologies)
+- [Run Locally](#run-locally)
+- [Contributing](#contributing)
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Description
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**Excel to JSON and DynamodB JSON** is a platform where people can choose excel file from computer and convert it to JSON and DynamoDB JSON.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Live Demo
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Check out the web version of **Excel to JSON and DynamodB JSON** here: [https://exceltodynamodbjson.vercel.app](https://exceltodynamodbjson.vercel.app)
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+<br>
+<img src="https://raw.githubusercontent.com/madiajijah11/exceltodynamodbjson/main/puglic/exceltodynamodbjson.jpg">
+<br>
 
-## Learn More
+## Technologies
 
-To learn more about Next.js, take a look at the following resources:
+-   [React.js](https://reactjs.org)
+-   [Bootstrap](https://getbootstrap.com)
+-   [SonarLint](https://www.sonarsource.com)
+-   [ESLint](https://eslint.org)
+-   [Stylelint](https://stylelint.io)
+-   [Prettier](https://prettier.io)
+-   [Vercel](https://vercel.com)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Run Locally
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+-   Requirement:
 
-## Deploy on Vercel
+    -   Install [Node.js](https://nodejs.org)
+    -   Recommended to use [Yarn](https://yarnpkg.com)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+-   Clone the repo.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+    ```bash
+    git clone https://github.com/madiajijah11/exceltodynamodbjson.git
+    ```
+
+    ```bash
+    cd exceltodynamodbjson
+    ```
+
+-   Install the dependencies.
+
+    ```bash
+    yarn
+    ```
+
+    ### Development
+
+    Run the development server and open [http://localhost:3000](http://localhost:3000)
+
+    ```bash
+    yarn start
+    ```
+
+    ### Production
+
+    Build the app for production.
+
+    ```bash
+    yarn build
+    ```
+
+## Contributing
+
+You can contribute to this site by creating an [issue](https://github.com/madiajijah11/exceltodynamodbjson/issues) or [pull request](https://github.com/madiajijah11/exceltodynamodbjson/pulls).
