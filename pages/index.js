@@ -24,11 +24,11 @@ export default function Home() {
 	};
 
 	//convert excel to json
-	const convertExcelToJson = (req) => {
+	const convertExcelToJson = (event) => {
 		const reader = new FileReader();
-		reader.readAsArrayBuffer(req.current.files[0]);
-		reader.onload = (req) => {
-			const data = req.target.result;
+		reader.readAsArrayBuffer(event.current.files[0]);
+		reader.onload = (event) => {
+			const data = event.target.result;
 			const workbook = XLSX.read(data, { type: "binary" });
 			const worksheet = workbook.Sheets[workbook.SheetNames[0]];
 			const jsonObject = XLSX.utils.sheet_to_json(worksheet);
@@ -94,7 +94,7 @@ export default function Home() {
 								className="form-control"
 								rows="25"
 								value={normalJson}
-								onChange={(req) => setNormalJson(req.target.value)}
+								onChange={(event) => setNormalJson(event.target.value)}
 							/>
 						</div>
 					</div>
@@ -106,7 +106,7 @@ export default function Home() {
 								className="form-control"
 								rows="25"
 								value={dynamodbJson}
-								onChange={(req) => setdynamodbJson(req.target.value)}
+								onChange={(event) => setdynamodbJson(event.target.value)}
 							/>
 						</div>
 					</div>
